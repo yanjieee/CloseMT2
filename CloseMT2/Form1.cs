@@ -66,6 +66,7 @@ namespace CloseMT2
                 Process proxyProcess = new Process();
                 proxyProcess.StartInfo.FileName = _fileName;
                 proxyProcess.Start();
+                _restartCount++;
             }
             timer1.Tag = int.Parse(textBox1.Text);
             timer1.Start();
